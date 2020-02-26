@@ -1,9 +1,14 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { graphql, useStaticQuery, Link } from "gatsby";
+
 
 
 function UniscitianoiPage() {
+
+  
+
   return (
 
     <Layout>
@@ -28,13 +33,13 @@ function UniscitianoiPage() {
           </div>  
           
           <label className="block text-xs mb-2 font-bold uppercase">Sono iteressato a diventare</label>
-          <div class="inline-block relative w-64 mb-4">
+          <div className="inline-block relative w-64 mb-4">
             <select  name="candidatura" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
               <option value="Associato">Un vostro associato</option>
               <option value="Fornitore">Un vostro fornitore</option>
             </select>
-            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-              <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+              <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
             </div>
           </div>
 
@@ -78,18 +83,16 @@ function UniscitianoiPage() {
             type="text"
           />
 
-          <div class="md:flex md:items-center mb-6">
-          
-              <label class="md:w-2/3 block text-gray-500 font-bold">
-                <input class="mr-2 leading-tight"  name=" Do il consenso al trattamento dei dati forniti" type="checkbox"/>
-                <span class="text-xs font-thin leading-tight ">
-                Do il consenso al trattamento dei dati forniti <br/> <a class="text-small text-gray-500" href="">Informativa ai sensi del D.Lgs. 196/2003 "Codice in materia di protezione dei dati personali"</a>
+          <div className="md:flex md:items-center mb-6">  
+              <label className="md:w-2/3 block text-gray-500 font-bold">
+                <input id="myCheck" class="mr-2 leading-tight"  name=" Do il consenso al trattamento dei dati forniti" type="checkbox" />
+                <span class="text-xs font-thin leading-tight">
+                  Do il consenso al trattamento dei dati forniti <br/> <Link to={"/privacycookyepolicy"}><div className="underline text-small text-gray-500">Informativa ai sensi del D.Lgs. 196/2003 "Codice in materia di protezione dei dati personali"</div></Link>
                 </span>
               </label>
-       
           </div>    
 
-          <button type="submit" className="w-1/4 text-sm md:text-base ml-auto right-0 h-12 my-auto bg-yellow-400 hover:bg-transparent text-black hover:text-gray-700 font-semibold py-2 px-2  sm:px-4 border border-yellow-400 rounded focus:outline-none ">
+          <button id="submit" type="submit" className=" w-1/4 text-sm md:text-base ml-auto right-0 h-12 my-auto bg-yellow-400 hover:bg-transparent text-black hover:text-gray-700 font-semibold py-2 px-2  sm:px-4 border border-yellow-400 rounded focus:outline-none ">
              Invia
           </button>
         </form>

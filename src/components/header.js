@@ -22,7 +22,7 @@ function Header() {
     <header  className="bg-white w-full top-0 z-40 shadow-lg">
       <div className="flex flex-wrap items-center justify-between max-w-6xl mx-auto p-2">
        
-          <Link  to={"/"}><img class="w-32" src={logo} alt="Logo" /></Link>
+          <Link to={"/"}><img class="w-32" src={logo} alt="Logo" /></Link>
          
         
         <button

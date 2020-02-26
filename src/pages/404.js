@@ -1,13 +1,11 @@
 import React from "react";
-import Header from "../components/header";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import abductionIllustration from "../images/abduction-illustration.svg";
 
 function NotFoundPage() {
   return (
-    <>
-    <Header/>
+
     <Layout>
       <SEO title="404: Not found" />
 
@@ -22,7 +20,7 @@ function NotFoundPage() {
         </h2>
       </div>
     </Layout>
-    </>
+
   );
 }
 
