@@ -17,6 +17,7 @@ function UniscitianoiPage() {
          method="post"
          data-netlify="true"
          data-netlify-honeypot="bot-field" 
+         action="/success"
          className="w-full">
           <div className="flex flex-wrap ">
    
