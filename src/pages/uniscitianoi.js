@@ -1,13 +1,26 @@
-import React from "react";
+import React, {Component} from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { Link } from "gatsby";
+import { render } from "react-dom";
 
 
 
-function UniscitianoiPage() {
+class UniscitianoiPage extends Component {
 
+  constructor(){
+    super();
+    this.state = { checked: false };
+
+    this.handleChange = this.handleChange.bind(this);
+  }
   
+  handleChange() {
+    this.setState({
+      checked: !this.state.checked
+    })
+  }
+  render(){
 
   return (
 
@@ -85,21 +98,25 @@ function UniscitianoiPage() {
 
           <div className="md:flex md:items-center mb-6">  
               <label className="md:w-2/3 block text-gray-500 font-bold">
-                <input id="myCheck" class="mr-2 leading-tight"  name=" Do il consenso al trattamento dei dati forniti" type="checkbox" />
+                <input id="myCheck" class="mr-2 leading-tight"  name=" Do il consenso al trattamento dei dati forniti" type="checkbox"
+                checked={ this.state.checked } 
+                onChange={ this.handleChange }/>
                 <span class="text-xs font-thin leading-tight">
                   Do il consenso al trattamento dei dati forniti <br/> <Link to={"/privacycookyepolicy"}><div className="underline text-small text-gray-500">Informativa ai sensi del D.Lgs. 196/2003 "Codice in materia di protezione dei dati personali"</div></Link>
                 </span>
               </label>
           </div>    
 
-          <button id="submit" type="submit" className=" w-1/4 text-sm md:text-base ml-auto right-0 h-12 my-auto bg-yellow-400 hover:bg-transparent text-black hover:text-gray-700 font-semibold py-2 px-2  sm:px-4 border border-yellow-400 rounded focus:outline-none ">
-             Invia
-          </button>
+          {this.state.checked ? 
+          <button type="submit" className="w-1/4 text-sm md:text-base ml-auto right-0 h-12 my-auto bg-yellow-400 hover:bg-transparent text-black hover:text-gray-700 font-semibold py-2 px-2  sm:px-4 border border-yellow-400 rounded focus:outline-none ">Invia</button> : 
+          <div className="w-1/4 text-center float-left text-sm md:text-base ml-auto  h-12 my-auto bg-yellow-400 text-black cursor-not-allowed font-semibold py-3 px-2 sm:px-4 border border-yellow-400 rounded focus:outline-none opacity-50">Invia</div>
+          }
         </form>
       </section>
     </Layout>
 
   );
+  }
 }
 
 export default UniscitianoiPage;

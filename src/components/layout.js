@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 import Header from "../components/header";
+import CookieConsent from "react-cookie-consent";
+import { Link } from "gatsby";
+
 
 function Layout({ children }) {
 
@@ -25,6 +28,21 @@ function Layout({ children }) {
         </div>
       </footer>
     </div>
+    <CookieConsent
+        location="bottom"
+        buttonText="Capisco"
+        style={{ background: "#2B373B", fontSize: "12px" }}
+        buttonStyle={{ color: "#4e503b", fontSize: "14px" }}
+        expires={150}
+    >
+        Questo sito utilizza i cookies per agevolare la navigazione, la prosecuzione della navigazione comporta la prestazione del consenso all'uso dei cookie.{" "}
+        <Link to={"/privacycookyepolicy"}>
+          <span className="text-xs underline" >
+           Clicca qui per avere maggiori informazioni
+          </span>
+        </Link>
+    </CookieConsent>
+  
     </>
   );
 }

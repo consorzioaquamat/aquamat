@@ -26,7 +26,7 @@ function Header() {
          
         
         <button
-          className="block md:hidden border border-yellow-400 flex items-center p-2 rounded text-gray-700 hover:text-yellow-400  hover:underline focus:outline-none"
+          className="block mr-2 md:hidden border border-yellow-400 flex items-center p-2 rounded text-gray-700 hover:text-yellow-400 hover:underline focus:outline-none"
           onClick={() => toggleExpansion(!isExpanded)}
         >
           <svg
