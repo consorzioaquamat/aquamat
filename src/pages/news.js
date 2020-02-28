@@ -50,11 +50,12 @@ function NewsPage() {
    
     <Layout >
       <SEO title="News"/>
+      <div className="flex flex-wrap">
            
         { data.allPrismicNews.edges.map((edge) => {
 
           return (
-          <div key={edge.node.id} className="w-full md:w-1/3 rounded shadow-lg">
+          <div key={edge.node.id} className="w-full md:w-1/3 rounded shadow-lg m-2">
             <img className="w-full h-64 object-contain" src={edge.node.data.image.url} alt={edge.node.data.titolo.text}/>
          
               <div className="p-4 mb-2">
@@ -67,6 +68,7 @@ function NewsPage() {
       
           )
         })}
+      </div>  
 
     </Layout>
   );
