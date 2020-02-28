@@ -7,10 +7,7 @@ function Success() {
   return (
 
     <Layout>
-      {/* <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
-      /> */}
+      <SEO title="Success"/>
       <section className="flex flex-wrap  p-auto mx-auto pt-32 w-10/12 lg:w-2/3 md:w-2/3 sm:w-4/5 h-screen">
         <div className="w-full">
             <h2 className=" text-4xl font-bold text-gray-700">

@@ -43,6 +43,7 @@ function ConsorziatePage() {
     `)
   return (
     <Layout >
+      <SEO title="Le nostre Consorziate" description="Elenco e descrizione delle nostre Consorziate sul territorio"/>
       <img className="shadow-inner" src={cartina} alt="aquamat regioni consorziate"/>
       <div className="flex flex-wrap">
         { data.allPrismicConsorziate.edges.map((edge) => {

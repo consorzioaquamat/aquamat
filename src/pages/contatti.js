@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 function ContattiPage() {
   return (
     <Layout> 
+       <SEO title="Contatti"/>
     <div class="flex flex-wrap bg-white rounded w-full min-h-screen ">
      
       <div className="p-4 w-full md:w-1/3 text-gray-700"> 

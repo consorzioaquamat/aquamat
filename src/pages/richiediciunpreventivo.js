@@ -24,10 +24,7 @@ class RichiediciunpreventivoPage extends Component {
   return (
 
     <Layout>
-      {/* <SEO
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-        title="Contact"
-      /> */}
+      <SEO title="Richiedici un preventivo"/>
       <section className="mb-8 flex m-auto sm:justify-center w-10/12 lg:w-2/3 md:w-2/3 sm:w-4/5">
         <form  name="preventivo-form"
           method="post"

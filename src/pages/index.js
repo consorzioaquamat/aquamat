@@ -10,7 +10,7 @@ import catalogo from "../images/aquamat-catalogo.png"
 function IndexPage() {
   return (
     <Layout >
-      {/* <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="Home"/> */}
+      <SEO keywords={[`aquamat`, `tubature`, `idraulica`, `sottosuolo`, `servizi`]} title="Aquamat" description="Consorzio nazionale d'acquisto che nasce dall'unione di professionisti del settore dell'idraulica del sottosuolo"/>
       <div class="flex-wrap">
         <div className="w-full mt-0 pt-0">
           <img src={homebanner} alt="aquamat banner"/>

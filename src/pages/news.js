@@ -49,7 +49,7 @@ function NewsPage() {
 
    
     <Layout >
-      {/* <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="Home"/> */}
+      <SEO title="News"/>
            
         { data.allPrismicNews.edges.map((edge) => {
 

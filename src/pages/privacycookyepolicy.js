@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 function Privacyage() {
   return (
     <Layout> 
+      <SEO title="Privacy e Cookie Policy"/>
     <div class="flex flex-wrap w-full ">
      
       <div className="p-4 w-full text-gray-700 text-justify"> 

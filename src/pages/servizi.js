@@ -6,7 +6,7 @@ import servizi from "../images/aquamat-servizi.png"
 function Servizi() {
   return (
     <Layout >
-      {/* <SEO keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]} title="Home"/> */}
+      <SEO title="Servizi"/>
     
         <div class="flex flex-wrap">
             <div class="md:w-1/2 p-4">
@@ -139,7 +139,7 @@ function Servizi() {
                 <ul class="list-disc text-gray-700 px-4">
                   <li>Fotovoltaico</li>
                   <li>Geotermo</li>
-                   <li>Impianti idraulici</li>
+                  <li>Impianti idraulici</li>
                 </ul> 
             </div>
 
