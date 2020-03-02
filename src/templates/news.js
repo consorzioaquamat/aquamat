@@ -29,6 +29,7 @@ const News = props => {
     
     const {data} = props;
 
+
       return (
 
         <>
@@ -39,27 +40,8 @@ const News = props => {
                 <div>
                     <h1 className="text-5xl font-bold text-xl leading-tight">{data.prismicNews.data.titolo.text}</h1>
                     <hr/>
-                    <div className="flex py-3 w-full" >
-                        <div className="w-5/6 text-gray-700">
-                            <p className="text-base uppercase">
-                            </p>
-                            <p>
-                            </p>
-                            <p>Km: 20 | Percorrenza: 1,20 </p>
-                        </div>
-                        <div className="w-1/6 my-auto right-0">
-                        <button className="float-right h-12 bg-yellow-400 hover:bg-transparent text-sm sm:text-base text-black hover:text-gray-700 font-semibold items-center px-2 sm:py-2 border border-yellow-400 rounded focus:outline-none">
-                                Prenota
-                        </button>
-                        
-                        </div>
-                    </div>
-                        <hr/>
-
-                    
+                 
                     <article className="font-normal text-normal my-8" dangerouslySetInnerHTML={{ __html: data.prismicNews.data.body.html }} />
-                    
-                  
                     
                 </div>
 

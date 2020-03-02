@@ -44,6 +44,7 @@ module.exports = {
      {
       resolve: `gatsby-source-prismic`,
       options: {
+      forcedRichTextFields: {},
       repositoryName: `wwwaquamatit`,
       accessToken: process.env.API_KEY,      	
      // pages: [{ 
