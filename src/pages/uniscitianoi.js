@@ -62,7 +62,7 @@ class UniscitianoiPage extends Component {
           </label>
           <input
             className="w-full mb-6 form-input"
-            name="first-name"
+            name="nome-azienda"
             placeholder="Nome Azienda"
             type="text"
           />
@@ -95,7 +95,7 @@ class UniscitianoiPage extends Component {
 
           <div className="md:flex md:items-center mb-6">  
               <label className="md:w-2/3 block text-gray-500 font-bold">
-                <input id="myCheck" class="mr-2 leading-tight"  name=" Do il consenso al trattamento dei dati forniti" type="checkbox"
+                <input id="myCheck" class="mr-2 leading-tight"  name="Do-il-consenso-al-trattamento-dei-dati-forniti" type="checkbox"
                 checked={ this.state.checked } 
                 onChange={ this.handleChange }/>
                 <span class="text-xs font-thin leading-tight">
