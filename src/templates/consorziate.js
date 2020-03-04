@@ -36,8 +36,8 @@ const Consorziate = props => {
                     <h1 className="text-5xl font-bold text-xl leading-tight">{data.prismicConsorziate.data.regione.text}</h1>
                     <hr/>
 
-                    
-                    <article className="font-normal text-normal my-8" dangerouslySetInnerHTML={{ __html: data.prismicConsorziate.data.body.html }} />
+          
+                    <div className=" my-8" dangerouslySetInnerHTML={{ __html: data.prismicConsorziate.data.body.html }} />
                     
                  
                     

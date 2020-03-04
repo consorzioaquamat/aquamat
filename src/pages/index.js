@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import homebanner from "../images/aquamat-home.jpg" 
 import catalogo from "../images/aquamat-catalogo.png" 
+import catalogoPdf from "../downloads/catalogo-aquamat.pdf" 
 
 
 
@@ -21,9 +23,9 @@ function IndexPage() {
           </div>
           <div className="flex flex-wrap">
               <div className="md:w-1/2 py-4 justify-center">
-                <div className="text-3xl text-yellow-400 font-bold">Scarica il nostro catalogo</div>
+              <a href={catalogoPdf} download><div className="text-3xl text-yellow-400 font-bold">Scarica il nostro catalogo</div></a>
                 <div className="text-gray-700">Laminazione e trattamento acque</div>
-                <img className="w-3/2 p-4" src={catalogo} alt="aquamat catalogo download"/>
+                <a href={catalogoPdf} download><img className="w-3/2 p-4" src={catalogo} alt="aquamat catalogo download"/></a>
               </div>
 
               <div className="md:w-1/2 py-4">
